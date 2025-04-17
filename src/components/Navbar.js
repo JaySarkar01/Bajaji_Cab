@@ -7,23 +7,12 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
-  { name: "Home", href: "/" },
-  { name: "About Us", href: "/about" },
-  { name: "Car Rental", href: "/car-rental" },
-  {
-    name: "Daily Packages",
-    dropdown: [
-      { name: "Shirni", href: "/packages/shirni" },
-      { name: "Mumbai", href: "/packages/mumbai" },
-      { name: "Delhi", href: "/packages/delhi" },
-      { name: "Varanasi", href: "/packages/varanasi" },
-    ],
-  },
-  {
-    name: "Tours",
-    dropdown: [{ name: "Blog", href: "/tours/blog" }],
-  },
-  { name: "Contact Us", href: "/contact" },
+  { name: "Home", href: "https://balaji.cab/" },
+  { name: "About Us", href: "https://balaji.cab/about/" },
+  { name: "Destinations", href: "https://balaji.cab/destination/" },
+  { name: "Packages", href: "https://balaji.cab/packages/" },
+  { name: "Blogs", href: "https://balaji.cab/blogs/" },
+  { name: "Contact Us", href: "https://balaji.cab/contact/" },
 ];
 
 export default function Navbar() {
@@ -62,40 +51,15 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-6 items-center">
-          {navItems.map((item, i) =>
-            !item.dropdown ? (
-              <Link
-                key={i}
-                href={item.href}
-                className="text-xl
-                font-medium text-white transition-colors"
-              >
-                {item.name}
-              </Link>
-            ) : (
-              <div key={i} className="relative group">
-                <button
-                  className="text-xl text-gray-50 hover:text-white transition-colors px-2 py-1 font-medium"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  {item.name}
-                </button>
-
-                <div className="absolute left-0 top-7 mt-2 min-w-[200px] bg-white rounded-xl shadow-xl border border-gray-200 opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto transition-all duration-200 ease-in-out z-50">
-                  {item.dropdown.map((d, j) => (
-                    <Link
-                      key={j}
-                      href={d.href}
-                      className="block px-4 py-2 text-lg text-gray-700 hover:text-yellow-600 hover:bg-gray-100 rounded-xl hover:font-medium transition-colors duration-150"
-                    >
-                      {d.name}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )
-          )}
+          {navItems.map((item, i) => (
+            <Link
+              key={i}
+              href={item.href}
+              className="text-xl font-medium text-white transition-colors"
+            >
+              {item.name}
+            </Link>
+          ))}
         </nav>
 
         {/* Mobile Menu Button */}
@@ -112,7 +76,6 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <>
-            {/* Backdrop */}
             <motion.div
               onClick={() => setIsOpen(false)}
               initial={{ opacity: 0 }}
@@ -121,7 +84,6 @@ export default function Navbar() {
               transition={{ duration: 0.3 }}
               className="fixed inset-0 bg-black z-40"
             />
-            {/* Sidebar */}
             <motion.div
               ref={sidebarRef}
               initial={{ x: "100%" }}
@@ -143,38 +105,18 @@ export default function Navbar() {
                 </button>
               </div>
 
-              {/* Links */}
+              {/* Mobile Links */}
               <div className="flex flex-col gap-6">
-                {navItems.map((item, i) =>
-                  !item.dropdown ? (
-                    <Link
-                      key={i}
-                      href={item.href}
-                      className="text-lg text-gray-800 hover:text-orange-500 transition-colors"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {item.name}
-                    </Link>
-                  ) : (
-                    <div key={i}>
-                      <p className="font-semibold text-gray-700 mb-2">
-                        {item.name}
-                      </p>
-                      <div className="ml-4 flex flex-col gap-2">
-                        {item.dropdown.map((d, j) => (
-                          <Link
-                            key={j}
-                            href={d.href}
-                            className="text-md text-gray-600 hover:text-orange-500 transition"
-                            onClick={() => setIsOpen(false)}
-                          >
-                            {d.name}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  )
-                )}
+                {navItems.map((item, i) => (
+                  <Link
+                    key={i}
+                    href={item.href}
+                    className="text-lg text-gray-800 hover:text-orange-500 transition-colors"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
               </div>
             </motion.div>
           </>
