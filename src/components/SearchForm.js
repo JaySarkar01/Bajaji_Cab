@@ -259,18 +259,18 @@ export default function SearchFrom() {
             {/* Image Section (unchanged) */}
             <motion.div 
               variants={itemVariants}
-              className="hidden lg:flex items-center justify-center bg-gradient-to-br from-indigo-100 to-purple-100 p-8 relative overflow-hidden rounded-l-2xl"
+              className="hidden lg:flex items-center justify-center relative overflow-hidden rounded-l-2xl shadow-xl"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-purple-500/10"></div>
-              <div className="relative w-full h-full z-10">
+            
+              
                 <Image
                   src="/hero-Imgs/Banner-2.jpg"
                   alt="Taxi illustration"
                   fill
-                  className="object-contain rounded-4xl"
+                  className="object-cover rounded"
                   priority
                 />
-              </div>
+              
             </motion.div>
           </div>
         </motion.div>
