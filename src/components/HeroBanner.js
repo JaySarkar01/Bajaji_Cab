@@ -121,7 +121,7 @@ buttons.forEach((button) => {
         {/* Right Image */}
         <div ref={imageRef} className="relative w-full h-full min-h-[300px] md:min-h-[400px]">
           <Image
-            src="https://static.toiimg.com/thumb/msid-95608491,width-748,height-499,resizemode=4,imgsize-104874/Most-beautiful-places-in-Garhwal-region-for-this-winter.jpg"
+            src="https://imgs.search.brave.com/V08nxWZMujnT554Xhp2v3ecNVXHIgRivS2OkASmrsE0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9yb3cteWVsbG93/LXRheGlzLWZyb20t/bmV3LXlvcmstY2l0/eS1zdHJlZXQtY29u/Y2VwdC10cmFuc3Bv/cnQtdHJhdmVsLW1h/bmhhdHRhbi1uZXct/eW9yay11c2FfMjA3/NzA5LTM0NS5qcGc_/c2VtdD1haXNfaHli/cmlkJnc9NzQw"
             alt="Billboards in Times Square"
             fill
             className="rounded-xl object-cover object-center shadow-xl"

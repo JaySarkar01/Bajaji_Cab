@@ -111,7 +111,7 @@ export default function SearchFrom() {
   };
 
   const onWhatAppClick = (name) => {
-    const phoneNumber = "919368043648"; // Replace with your WhatsApp number
+    const phoneNumber = "917351358883"; // Replace with your WhatsApp number
     const message = `Hello, I would like to book a cab. My name is ${name}.`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
@@ -120,10 +120,8 @@ export default function SearchFrom() {
   return (
     <section className="py-12 w-full px-4 sm:px-6 lg:px-8">
      <div className="text-center">
-  <h1 className="relative mb-5 inline-block text-3xl md:text-5xl lg:text-6xl font-bold py-14 font-sans
-    bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 text-transparent bg-clip-text
-    after:content-[''] after:absolute after:left-1/2 after:bottom-3 after:-translate-x-1/2 after:w-3/4 after:h-1 
-    after:bg-gradient-to-r after:from-pink-400 after:via-blue-400 after:to-purple-500 after:rounded-full">
+  <h1 className="relative mb-5 inline-block text-3xl md:text-5xl lg:text-6xl font-bold py-14 font-sans underline underline-offset-8
+    ">
     Welcome to Balaji Cab Service
   </h1>
 </div>
@@ -178,7 +176,6 @@ export default function SearchFrom() {
                     onSubmit={handleSubmit}
                     noValidate
                   >
-                    {/* Rest of your form (name, mobile, button) remains the same */}
                     <div>
                       <h1 className='text-center font-bold text-4xl'>Book your ride now!</h1>
                       <p className='text-gray-600 text-center p-3'>Fill out the form below to get an exclusive discount on your booking.</p>
@@ -232,7 +229,7 @@ export default function SearchFrom() {
                         onMouseUp={() => setIsButtonPressed(false)}
                         onMouseLeave={() => setIsButtonPressed(false)}
                         disabled={isSubmitting}
-                        className={`w-full py-4 px-6 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold rounded-xl shadow-md hover:shadow-lg transition-all ${isButtonPressed ? 'transform scale-95' : ''} ${isSubmitting ? 'opacity-80 cursor-not-allowed' : ''}`}
+                        className={`w-full py-4 px-6 bg-gradient-to-r from-amber-200 to-yellow-500 text-gray-900 font-bold rounded-xl shadow-md hover:shadow-lg transition-all ${isButtonPressed ? 'transform scale-95' : ''} ${isSubmitting ? 'opacity-80 cursor-not-allowed' : ''}`}
                       >
                         {isSubmitting ? (
                           <span className="flex items-center justify-center">
@@ -243,7 +240,13 @@ export default function SearchFrom() {
                             Processing...
                           </span>
                         ) : (
-                          <div className="text-lg" onClick={()=>onWhatAppClick(formData.name)}>Book now! Get ₹500 off</div>
+                          <div className="text-lg" 
+                          onClick={()=>{
+                            if (formData.name.trim() == '') return;
+                            
+                              onWhatAppClick(formData.name);
+                      
+                          }}>Book now! Get ₹500 off</div>
                         )}
                       </motion.button>
                       <p className="text-xs text-gray-500 mt-2 text-center">T&C Apply</p>
@@ -261,7 +264,7 @@ export default function SearchFrom() {
               <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-purple-500/10"></div>
               <div className="relative w-full h-full z-10">
                 <Image
-                  src="https://edit.org/img/blog/uuw-taxi-service-templates-online-edit-custom.jpg"
+                  src="/hero-Imgs/Banner-2.jpg"
                   alt="Taxi illustration"
                   fill
                   className="object-contain rounded-4xl"

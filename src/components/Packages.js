@@ -5,57 +5,58 @@ import { motion } from "framer-motion";
 
 const packages = [
   {
-    title: "Mahabaleshwar Hill Station Tour",
+    title: "Delhi airport to Char Dham Yatra",
     description:
-      "Scenic getaway to the lush green hills and waterfalls of Mahabaleshwar.",
+      "A spiritual journey to the sacred Delhi and Char Dham shrines in Uttarakhand.",
+    duration: "2D/3N",
+    
+    image:
+      "/package-imgs/char-dham-yatra-delhi.jpg",
+  },
+  {
+    title: "Haridwar to Char Dham Yatra",
+    description:
+      "A spiritual journey to the sacred Haridwar and Char Dham shrines in Uttarakhand.",
     duration: "3D/2N",
-    price: "₹9,500",
+   
     image:
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/d7/a9/a2/view-of-rock-formation.jpg?w=300&h=300&s=1",
+      "/package-imgs/Haridwar-to-char-dham-hari.jpg",
   },
   {
-    title: "Shirdi Sai Baba Darshan",
+    title: "Panthnagaer airport to Char Dham Yatra",
     description:
-      "Spiritual journey to the holy town of Shirdi, visiting the Sai Baba temple.",
-    duration: "1D/2N",
-    price: "₹4,000",
+      "A spiritual journey to the sacred Panthnagaer and Char Dham shrines in Uttarakhand.",
+    duration: "3D/2N",
+    
     image:
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/d7/a9/a2/view-of-rock-formation.jpg?w=300&h=300&s=1",
+      "/package-imgs/charDham-panth.jpg",
   },
   {
-    title: "Goa Beach Holiday",
+    title: "Bareilly airport to Nainital, Bhimtal, and kainchi dham",
     description:
-      "Relaxing vacation on the golden beaches of Goa with water sports and nightlife.",
-    duration: "4D/5N",
-    price: "₹12,000",
+      "A scenic journey from Bareilly to the beautiful hill stations of Nainital and Bhimtal, including a visit to the famous Kainchi Dham.",
+    duration: "2D/3N",
+    
     image:
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/d7/a9/a2/view-of-rock-formation.jpg?w=300&h=300&s=1",
+      "/package-imgs/Nanital_mepkcl.avif",
   },
   {
-    title: "Mumbai City Tour",
+    title: "Panthanagar airport to Jim corbett, Nainital, Bhimtal, and Kainchi dham ",
     description:
-      "Explore the vibrant city of Mumbai, visiting famous landmarks and attractions.",
-    duration: "2D/1N",
-    price: "₹6,500",
+      "A scenic journey from Panthanagar to the beautiful hill stations of Nainital and Bhimtal, including a visit to the famous Kainchi Dham and Jim Corbett National Park.",
+    duration: "3D/2N",
+    
     image:
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/d7/a9/a2/view-of-rock-formation.jpg?w=300&h=300&s=1",
+      "/package-imgs/jimC.jpeg",
   },
   {
-    title: "Lonavala-Khandala Weekend Trip",
+    title: "Panthnagar airport to Kasar Devi and Mukteshwar",
     description:
-      "Refreshing weekend escape to the misty valleys and caves of Lonavala",
-    duration: "2D/1N",
-    price: "₹5,500",
+      "A scenic journey from Panthnagar to the beautiful hill stations of Kasar Devi and Mukteshwar.",
+    duration: "3D/2N",
+    
     image:
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/d7/a9/a2/view-of-rock-formation.jpg?w=300&h=300&s=1",
-  },
-  {
-    title: "Shirdi Package",
-    description: "2 days pilgrimage tour covering Shirdi and nearby temples.",
-    duration: "2D/1N",
-    price: "₹5,000",
-    image:
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/d7/a9/a2/view-of-rock-formation.jpg?w=300&h=300&s=1",
+      "/package-imgs/kasar-dev.jpeg",
   },
 ];
 
@@ -127,8 +128,10 @@ export default function PackagesSection() {
                 <span className="text-gray-500 font-medium text-lg">
                   {pkg.duration}
                 </span>
-                <span className="text-green-600 font-bold text-2xl md:text-3xl">
-                  {pkg.price}
+                <span >
+                <button className="hero-button bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 rounded-lg font-bold transition-all duration-300 shadow-lg text-lg">
+                Book now
+              </button>
                 </span>
               </div>
             </div>

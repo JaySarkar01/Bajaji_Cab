@@ -35,7 +35,7 @@ const Combanner = () => {
       {/* Right Section */}
       <div className="md:w-1/3 flex flex-col justify-between h-full space-y-6">
         <p className="text-gray-800 leading-relaxed text-base tracking-normal font-extralight">
-          Chpta is one of my favorite place to visite and see the natural beauty. You can go with your family of friends! and the service of Balaji cab was aslo too good for me in Chopta visiting.
+          Chopta is one of my favorite place to visite and see the natural beauty. You can go with your family of friends! and the service of Balaji cab was aslo too good for me in Chopta visiting.
         </p>
         <div className="text-right mt-auto">
           <p className="text-yellow-600 font-semibold">Ravi Gupta</p>
