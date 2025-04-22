@@ -71,7 +71,7 @@ const cardVariants = {
 
 const onWhatAppClick = (title) => () => {
   const message = `Hi There! I am interested in the "${title} package. Can you please provide more details?`;
-  const phoneNumber = "919368043648"; // Replace with your WhatsApp number
+  const phoneNumber = "917895497017"; //WhatsApp number
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank");
 }
@@ -125,7 +125,7 @@ export default function PackagesSection() {
                 {pkg.description}
               </p>
               <div className="flex items-center justify-between mt-4">
-                <span className="text-gray-500 font-medium text-lg">
+                <span className="text-gray-600 font-medium text-lg">
                   {pkg.duration}
                 </span>
                 <span >

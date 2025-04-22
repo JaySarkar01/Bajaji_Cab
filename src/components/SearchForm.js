@@ -111,7 +111,7 @@ export default function SearchFrom() {
   };
 
   const onWhatAppClick = (name) => {
-    const phoneNumber = "917351358883"; // Replace with your WhatsApp number
+    const phoneNumber = "917895497017"; //WhatsApp number
     const message = `Hello, I would like to book a cab. My name is ${name}.`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
