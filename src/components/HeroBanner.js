@@ -107,8 +107,13 @@ buttons.forEach((button) => {
             </p>
 
             {/* Buttons */}
-            <div className="flex gap-4 flex-wrap">
-              <button className="hero-button bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 rounded-lg font-bold transition-all duration-300 shadow-lg text-lg">
+            <div className="flex gap-4 flex-wrap"  onClick={() =>
+    window.open(
+      "https://wa.me/917895497017?text=Hello%20Balaji%20Cab%20Team!%20I%20am%20interested%20in%20your%20services.",
+      "_blank"
+    )
+  }>
+              <button className="hero-button bg-gradient-to-r from-amber-200 to-yellow-500 hover:bg-yellow-500 text-black px-6 py-3 rounded-lg font-bold transition-all duration-300 shadow-lg text-lg">
                 Book now
               </button>
               <button className="hero-button bg-white border border-yellow-200 hover:border-yellow-300 text-yellow-600 px-6 py-3 rounded-lg font-bold transition-all duration-300 shadow text-lg">

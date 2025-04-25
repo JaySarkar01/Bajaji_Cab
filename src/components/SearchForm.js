@@ -55,7 +55,7 @@ export default function SearchFrom() {
       ...prev,
       [name]: value
     }));
-    // Clear error when user types
+   
     if (errors[name]) {
       setErrors(prev => ({
         ...prev,
@@ -102,7 +102,7 @@ export default function SearchFrom() {
     e.preventDefault();
     if (validateForm()) {
       setIsSubmitting(true);
-      // Simulate API call
+      
       setTimeout(() => {
         setIsSubmitting(false);
         setIsSuccess(true);
@@ -118,9 +118,9 @@ export default function SearchFrom() {
   }
 
   return (
-    <section className="py-12 w-full px-4 sm:px-6 lg:px-8">
-     <div className="text-center">
-  <h1 className="relative mb-5 inline-block text-3xl md:text-5xl lg:text-6xl font-bold py-14 font-sans underline underline-offset-8
+    <section className="py-14 w-full px-4 sm:px-6 lg:px-8">
+     <div className="hidden md:block text-center lg:mt-40 xl:mt-15">
+  <h1 className="relative mb-5 text-3xl md:text-5xl lg:text-6xl font-bold py-14 font-sans underline underline-offset-8
     ">
     Welcome to Balaji Cab Service
   </h1>

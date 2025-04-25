@@ -129,7 +129,7 @@ export default function PackagesSection() {
                   {pkg.duration}
                 </span>
                 <span >
-                <button className="hero-button bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 rounded-lg font-bold transition-all duration-300 shadow-lg text-lg">
+                <button className="hero-button bg-gradient-to-r from-amber-200 to-yellow-500 text-black px-6 py-3 rounded-lg font-bold transition-all duration-300 shadow-lg text-lg">
                 Book now
               </button>
                 </span>

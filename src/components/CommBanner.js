@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Inter } from "next/font/google";
   const inter = Inter({
@@ -22,8 +23,13 @@ const Combanner = () => {
         Your best cab booking experience awaits. We provide wide range of package for all tourist places in India. Our premium services ensure customer comfort while they travel with us. Expert drivers focus on customer safety; we understand that&apos;s important to you.
         </p>
 
-        <div className="flex flex-wrap gap-4 pt-4">
-          <button className="bg-yellow-500 text-black py-3 px-8 rounded-xl hover:bg-yellow-600 transition-all font-bold shadow-sm">
+        <div className="flex flex-wrap gap-4 pt-4" onClick={() =>
+    window.open(
+      "https://wa.me/917895497017?text=Hello%20Balaji%20Cab%20Team!%20I%20am%20interested%20in%20your%20services.",
+      "_blank"
+    )
+  }>
+          <button className="bg-gradient-to-r from-amber-200 to-yellow-500 text-black py-3 px-8 rounded-xl hover:bg-yellow-600 transition-all font-bold shadow-sm">
             Book now
           </button>
           <button className="bg-white text-yellow-600 border-2 border-yellow-200 py-3 px-8 rounded-xl hover:border-yellow-300 transition-all font-bold">
