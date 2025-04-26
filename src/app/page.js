@@ -9,8 +9,7 @@ export default function Home() {
   return (
     <div className="">
       <main className="">
-        <section className="max-w-full h-scr
-        een flex justify-center items-center bg-gradient-to-br from-purple-50 to-indigo-50">
+        <section className="max-w-full h-screen flex justify-center items-center bg-gradient-to-br from-purple-50 to-indigo-50">
         <SearchFrom/>
         </section>
         <section className="pb-10">
@@ -25,7 +24,6 @@ export default function Home() {
        </section>
       </main>
       <footer>
-
       </footer>
     </div>
   );
