@@ -8,7 +8,7 @@ const packages = [
     title: "Delhi airport to Char Dham Yatra",
     description:
       "A spiritual journey to the sacred Delhi and Char Dham shrines in Uttarakhand.",
-    duration: "2D/3N",
+    duration: "10D/9N",
     
     image:
       "/package-imgs/char-dham-yatra-delhi.jpg",
@@ -17,7 +17,7 @@ const packages = [
     title: "Haridwar to Char Dham Yatra",
     description:
       "A spiritual journey to the sacred Haridwar and Char Dham shrines in Uttarakhand.",
-    duration: "3D/2N",
+    duration: "10D/9N",
    
     image:
       "/package-imgs/Haridwar-to-char-dham-hari.jpg",
@@ -26,7 +26,7 @@ const packages = [
     title: "Panthnagaer airport to Char Dham Yatra",
     description:
       "A spiritual journey to the sacred Panthnagaer and Char Dham shrines in Uttarakhand.",
-    duration: "3D/2N",
+    duration: "10D/9N",
     
     image:
       "/package-imgs/charDham-panth.jpg",
