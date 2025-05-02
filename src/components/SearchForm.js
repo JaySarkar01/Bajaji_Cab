@@ -60,7 +60,7 @@ export default function SearchForm() {
   };
 
   const onWhatAppClick = (name) => {
-    const phoneNumber = '917895497017';
+    const phoneNumber = '919758777017';
     const message = `Hello, I would like to book a cab. My name is ${name}.`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');

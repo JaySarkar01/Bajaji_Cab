@@ -109,7 +109,7 @@ buttons.forEach((button) => {
             {/* Buttons */}
             <div className="flex gap-4 flex-wrap"  onClick={() =>
     window.open(
-      "https://wa.me/917895497017?text=Hello%20Balaji%20Cab%20Team!%20I%20am%20interested%20in%20your%20services.",
+      "https://wa.me/919758777017?text=Hello%20Balaji%20Cab%20Team!%20I%20am%20interested%20in%20your%20services.",
       "_blank"
     )
   }>
@@ -126,8 +126,8 @@ buttons.forEach((button) => {
         {/* Right Image */}
         <div ref={imageRef} className="relative w-full h-full min-h-[300px] md:min-h-[400px]">
           <Image
-            src="https://imgs.search.brave.com/V08nxWZMujnT554Xhp2v3ecNVXHIgRivS2OkASmrsE0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9yb3cteWVsbG93/LXRheGlzLWZyb20t/bmV3LXlvcmstY2l0/eS1zdHJlZXQtY29u/Y2VwdC10cmFuc3Bv/cnQtdHJhdmVsLW1h/bmhhdHRhbi1uZXct/eW9yay11c2FfMjA3/NzA5LTM0NS5qcGc_/c2VtdD1haXNfaHli/cmlkJnc9NzQw"
-            alt="Billboards in Times Square"
+            src="/hero-Imgs/yellow_car.webp"
+            alt="Hero Car Banner"
             fill
             className="rounded-xl object-cover object-center shadow-xl"
             priority

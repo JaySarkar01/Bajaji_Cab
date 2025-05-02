@@ -23,9 +23,9 @@ const packages = [
       "/package-imgs/Haridwar-to-char-dham-hari.jpg",
   },
   {
-    title: "Panthnagaer airport to Char Dham Yatra",
+    title: "Pantnagar airport to Char Dham Yatra",
     description:
-      "A spiritual journey to the sacred Panthnagaer and Char Dham shrines in Uttarakhand.",
+      "A spiritual journey to the sacred Pantnagar and Char Dham shrines in Uttarakhand.",
     duration: "10D/9N",
     
     image:
@@ -41,18 +41,18 @@ const packages = [
       "/package-imgs/Nanital_mepkcl.avif",
   },
   {
-    title: "Panthanagar airport to Jim corbett, Nainital, Bhimtal, and Kainchi dham ",
+    title: "Pantnagar airport to Jim corbett, Nainital, Bhimtal, and Kainchi dham",
     description:
-      "A scenic journey from Panthanagar to the beautiful hill stations of Nainital and Bhimtal, including a visit to the famous Kainchi Dham and Jim Corbett National Park.",
+      "A scenic journey from Pantnagar to the beautiful hill station of Nainital and Bhimtal, including a visit to the famous Kainchi Dham and Jim Corbett National Park.",
     duration: "3D/2N",
     
     image:
       "/package-imgs/jimC.jpeg",
   },
   {
-    title: "Panthnagar airport to Kasar Devi and Mukteshwar",
+    title: "Pantnagar airport to Kasar Devi and Mukteshwar",
     description:
-      "A scenic journey from Panthnagar to the beautiful hill stations of Kasar Devi and Mukteshwar.",
+      " A scenic journey from Pantnagar to the beautiful hill stations of Kasar Devi and Mukteshwar.",
     duration: "3D/2N",
     
     image:
@@ -71,7 +71,7 @@ const cardVariants = {
 
 const onWhatAppClick = (title) => () => {
   const message = `Hi There! I am interested in the "${title} package. Can you please provide more details?`;
-  const phoneNumber = "917895497017"; //WhatsApp number
+  const phoneNumber = "919758777017"; //WhatsApp number
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank");
 }

@@ -25,7 +25,7 @@ const Combanner = () => {
 
         <div className="flex flex-wrap gap-4 pt-4" onClick={() =>
     window.open(
-      "https://wa.me/917895497017?text=Hello%20Balaji%20Cab%20Team!%20I%20am%20interested%20in%20your%20services.",
+      "https://wa.me/919758777017?text=Hello%20Balaji%20Cab%20Team!%20I%20am%20interested%20in%20your%20services.",
       "_blank"
     )
   }>

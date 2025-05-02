@@ -23,8 +23,6 @@ export default function Home() {
         <MapLocation/>
        </section>
       </main>
-      <footer>
-      </footer>
     </div>
   );
 }

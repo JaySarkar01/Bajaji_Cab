@@ -25,6 +25,9 @@ const MapLocation = () => {
             <FaMapMarkerAlt size={22} aria-label="Location Pin" />
             <span>Rudrapur, Uttarakhand, India</span>
           </div>
+          <div className="text-lg text-gray-200 font-semibold">
+          Contact us: +91 97587-77017
+          </div>
         </motion.div>
 
         {/* Embedded Google Map */}
