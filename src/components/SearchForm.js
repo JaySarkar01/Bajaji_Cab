@@ -83,7 +83,7 @@ export default function SearchForm() {
                 <div className="flex justify-center mb-4">
                   <FiCheckCircle className="text-green-500 text-6xl" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Booking Successful!</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Wolaaah! Booking Successful...</h3>
                 <p className="text-gray-600 mb-6">Our representative will contact you shortly.</p>
                 <button
                   onClick={resetForm}
